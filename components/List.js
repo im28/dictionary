@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
 		width: width - 50,
 		flexDirection: 'row',
 		padding:5,
-		borderRadius: 5,
+		borderRadius: 10,
 		backgroundColor: 'white',
 		height: "auto",
 		alignItems: 'center',
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 				shadowRadius: 2,
 				shadowOffset: {
 					height: 2,
-					width: 0
+					width: 2
 				}
 			},
 			android: {
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
 		fontWeight: '500',
 		fontSize: 22,
 		marginVertical: 15,
-		color:'#36b5b0'
+		color:'#89cfef'
 	},
 });
 

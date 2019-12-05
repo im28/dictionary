@@ -1,3 +1,3 @@
-const primaryStart = '#dff6f099';
-const primaryEnd = '#46b3e699';
-export const primaryGradientArray = ['#ffc6c799',primaryStart, primaryEnd];
+const primaryStart = '#f2fffc';
+const primaryEnd = '#89cfef';
+export const primaryGradientArray = [primaryStart, primaryEnd];

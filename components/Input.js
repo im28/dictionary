@@ -4,12 +4,13 @@ import { StyleSheet, TextInput } from 'react-native';
 import { inputPlaceholder } from './utils/Colors';
 
 const Input = ({ inputValue, onChangeText, onDoneAddItem }) => (
+
 	<TextInput
 		style={styles.input}
 		value={inputValue}
 		onChangeText={onChangeText}
 		placeholder="Find defenition.."
-		placeholderTextColor={'white'}
+		placeholderTextColor={'#f5f5f5'}
 		multiline={true}
 		autoCapitalize="sentences"
 		underlineColorAndroid="transparent"
@@ -19,7 +20,7 @@ const Input = ({ inputValue, onChangeText, onDoneAddItem }) => (
 		autoCorrect={false}
 		blurOnSubmit={true}
 		onSubmitEditing={onDoneAddItem}
-	/>
+		/>
 );
 
 const styles = StyleSheet.create({
@@ -29,6 +30,7 @@ const styles = StyleSheet.create({
 		fontSize: 34,
 		color: 'white',
 		fontWeight: '500',
+		marginLeft:40,
 	}
 });
 

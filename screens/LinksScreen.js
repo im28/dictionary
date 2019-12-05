@@ -52,12 +52,13 @@ export default function LinksScreen() {
 				<Header title={"Dictionary"} />
 			</View>
       <Input 
+          style ={styles.Input}
 					inputValue={inputValue}
 					onChangeText={newInputValue}
 					onDoneAddItem={onDoneAddItem}
 				/>
 
-        <ScrollView style={styles.list}>
+        <ScrollView style={styles.list} contentContainerStyle={{alignItems: 'center'}}>
           {
             !Loading?
             Defenitions.map((item)=>{
@@ -84,11 +85,17 @@ LinksScreen.navigationOptions = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding:25,
-    paddingTop: 100,
+    // padding:25,
+    paddingTop: 30,
     backgroundColor: '#fff',
   },
-  list:{
+  centered:{
+    alignItems: 'center'
+  },
+  list:{ 
     marginTop:50,
+  },
+  Input:{
+    marginLeft:40,
   }
 });
